@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./brooke-cagle-cb4Dv50LN1Y-unsplash\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-left {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-left p {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  color: white;
+  cursor: pointer;
+}
+.navbar-left div {
+  width: 10px;
+  height: 10px;
+  background-color: #0bbef2;
+  margin-top: 20px;
+}
+.navbar-right {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nv-text {
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  border-bottom: 1px solid lightblue;
+  margin: 0;
+  cursor: pointer;
+}
+.nv-tex {
+  color: grey;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  border: 3px solid grey;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.nv-tex p {
+  margin: 16px 22px;
+}
+.product {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+.pro {
+  margin-left: 270px;
+  width: 30%;
+  height: 50%;
+}
+.text {
+  width: 100%;
+  height: 40%;
+}
+.text p {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: left;
+  color: white;
+  text-align: center;
+  text-align: left;
+}
+.text2 {
+  width: 75%;
+  height: fit-content;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 163.15%;
+  color: white;
+}
+.inputs {
+  width: 100%;
+  height: 60px;
+  margin-top: 70px;
+}
+.inputs input {
+  width: 60%;
+  height: 100%;
+  border: 1px solid black;
+}
+.inputs button {
+  width: 30%;
+  height: 100%;
+  background-color: #0bbef2;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
