@@ -56,7 +56,53 @@ function App() {
               </p>
             </div>
             <div className="learn">
-              <Button variant="link">Link</Button>
+              <Button variant="link">Learn more</Button>
+            </div>
+          </div>
+        </div>
+        <div className="meeting">
+          <img src={Meeting} />
+        </div>
+      </div>
+      <div className="Meeting">
+        <div className="discription">
+          <div className="dis1">
+            <div className="header2">
+              <p>Your Hub for teamwork</p>
+            </div>
+            <div className="dis2">
+              <p>
+                Give everyone you work with—inside and outside your company—a
+                more productive way to stay in sync. Respond faster with emoji,
+                keep conversations focused in channels, and simplify all your
+                communication into one place.
+              </p>
+            </div>
+            <div className="learn">
+              <Button variant="link">Learn more</Button>
+            </div>
+          </div>
+        </div>
+        <div className="meeting">
+          <img src={Meeting} />
+        </div>
+      </div>
+      <div className="Meeting">
+        <div className="discription">
+          <div className="dis1">
+            <div className="header2">
+              <p>Your Hub for teamwork</p>
+            </div>
+            <div className="dis2">
+              <p>
+                Give everyone you work with—inside and outside your company—a
+                more productive way to stay in sync. Respond faster with emoji,
+                keep conversations focused in channels, and simplify all your
+                communication into one place.
+              </p>
+            </div>
+            <div className="learn">
+              <Button variant="link">Learn more</Button>
             </div>
           </div>
         </div>
