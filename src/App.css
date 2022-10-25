@@ -1,11 +1,11 @@
-* {
+ * {
   margin: 0;
   padding: 0;
 }
 .Header {
   width: 100%;
   height: 100vh;
-  background-image: url(./brooke-cagle-cb4Dv50LN1Y-unsplash\ 1.png);
+  background-image: url(./background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -118,3 +118,57 @@
   line-height: 24px;
   cursor: pointer;
 }
+.Meeting {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.meeting {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.discription {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+.dis1 {
+  width: 465px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.header2 p {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+}
+.header2 {
+  width: 100%;
+  height: 30%;
+  border: 1px solid red;
+}
+.dis2 {
+  width: 100%;
+  height: 30%;
+  border: 1px solid red;
+}
+.dis2 p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px; 
+} 
+.learn {
+  width: 100%;
+  height: 30%;
+  border: 1px solid red;
+}
+
+
