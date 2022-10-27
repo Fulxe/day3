@@ -1,4 +1,4 @@
- * {
+* {
   margin: 0;
   padding: 0;
 }
@@ -160,13 +160,74 @@
 .dis2 p {
   font-weight: 400;
   font-size: 18px;
-  line-height: 29px; 
-} 
+  line-height: 29px;
+}
 .learn {
   width: 100%;
   height: 30%;
   display: flex;
   align-items: center;
 }
-
-
+.product1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bck-img {
+  width: 40%;
+  height: 70%;
+  background-image: url(./meeting-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 100px;
+}
+.bck-img img {
+  width: 240px;
+  height: 110px;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+.product2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.pro2 {
+  width: 40%;
+  height: 75%;
+  background-image: url(./bck.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 150px;
+  display: flex;
+  align-items: center;
+}
+.pro2 img {
+  margin-left: 70px;
+}
+.about-us {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content: center;
+}
+.h1 {
+  height: fit-content;
+  font-weight: 800;
+  font-size: 50px;
+}
+.says {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  gap: 6%;
+}
