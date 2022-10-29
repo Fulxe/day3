@@ -44,7 +44,7 @@
 }
 .nv-text {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   color: white;
   border-bottom: 1px solid lightblue;
   margin: 0;
@@ -53,7 +53,7 @@
 .nv-tex {
   color: grey;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   border: 3px solid grey;
   border-radius: 3px;
@@ -123,7 +123,6 @@
   height: 100vh;
   display: flex;
 }
-
 .meeting {
   width: 50%;
   height: 100%;
