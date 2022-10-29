@@ -4,28 +4,25 @@ import avatar from "./Avatar.jpg";
 import cover from "./Image.jpg";
 import React from "react";
 
-function First() {
+function First(props) {
+  const { text, name, profile } = props;
   return (
-      <div className="first">
-        <div className="star">
-          <img src={star} />
-          <img src={star} />
-          <img src={star} />
-          <img src={star} />
-          <img src={star} />
-        </div>
-        <div className="text">
-          <p>
-            Give everyone you work with—inside and outside your emoji, keep
-            conversations focused in channels, and simplify all your
-            communication into one place.
-          </p>
-        </div>
-        <div className="profile">
-          <img src={avatar} />
-          <p>Amy Klassen</p>
-        </div>
+    <div className="first">
+      <div className="star">
+        <img src={star} />
+        <img src={star} />
+        <img src={star} />
+        <img src={star} />
+        <img src={star} />
       </div>
+      <div className="text">
+        <p>{text}</p>
+      </div>
+      <div className="profile">
+        <img src={profile}  />
+        <p>{name}</p>
+      </div>
+    </div>
   );
 }
 
