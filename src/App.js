@@ -11,6 +11,7 @@ import pro from "./jane.jpg";
 import pro2 from "./eleon.jpg";
 import avatar from "./Components/Avatar.jpg";
 import pro3 from "./amy2.jpg";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <div className="navbar">
           <Logo />
           <div className="navbar-right">
-            <div className="nv-text">Product</div>
+            <div className="nv-text"><Link to="/products">Product</Link></div>
             <div className="nv-text">Services</div>
             <div className="nv-text">Contact</div>
             <div className="nv-text">Log in</div>

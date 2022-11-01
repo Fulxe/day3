@@ -89,6 +89,21 @@ function Post() {
       <div className="Line">
         <div></div>
       </div>
+      <div className="com">
+        <div className="conversation">
+          <div className="join">
+            <p>Join the conversation</p>
+          </div>
+          <div className="comment">
+            <div>
+              {" "}
+              <img src={Avatar} />
+            </div>
+            <input type="text" placeholder="comments" />
+          </div>
+        </div>
+      </div>
+
       <div className="footer">
         <div className="footer1">
           <div className="left">

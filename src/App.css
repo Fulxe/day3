@@ -46,7 +46,6 @@
   font-weight: 700;
   font-size: 20px;
   color: white;
-  border-bottom: 1px solid lightblue;
   margin: 0;
   cursor: pointer;
 }
@@ -55,7 +54,6 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  border: 3px solid grey;
   border-radius: 3px;
   cursor: pointer;
 }
