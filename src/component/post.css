@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  width: 100%;
+  height: 100vh;
+}
+.navbar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.navbar-left {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-left p {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  color: black;
+  cursor: pointer;
+}
+.navbar-left div {
+  width: 10px;
+  height: 10px;
+  background-color: #0bbef2;
+  margin-top: 21px;
+}
+.navbar-right {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nv-text {
+  font-weight: 700;
+  font-size: 20px;
+  color: grey;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  cursor: pointer;
+}
+.nv-tex {
+  color: grey;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  border: 3px solid rgba(77, 160, 253, 0.42);
+  border-radius: 3px;
+  background-color: rgba(77, 160, 253, 0.1);
+  color: rgba(77, 160, 253, 1);
+  cursor: pointer;
+}
+.nv-tex p {
+  margin: 16px 22px;
+}
+.second {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Heading {
+  width: 35%;
+  height: 160px;
+  margin-top: 150px;
+}
+.Heading h1 {
+  font-weight: 800;
+  font-size: 50px;
+}
+.creater {
+  width: 35%;
+  height: 5%;
+  margin-top: 50px;
+}
+.sec {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.creater img {
+  width: 55px;
+  height: 100%;
+}
+.p {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.border {
+  border-left: 1px solid black;
+  height: 40%;
+}
+.clap {
+  margin-top: 80px;
+}
+.mirage {
+  width: 100vw;
+  height: 70vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.dust {
+  width: 40%;
+  height: 100%;
+}
+.titel {
+  width: 100%;
+  height: fit-content;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 45px;
+}
+.end {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.end2 {
+  width: 40%;
+  height: 100%;
+}
+.end3 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+
+}
+.end3-1 {
+  width: 40%;
+  height: 100%;
+}
+.end3-1 p {
+  margin: 0;
+  margin-left: 15px;
+}
+.write {
+    font-size: 12px;
+}
+.Name {
+  font-size: 20px;
+}
+.Team {
+    font-size: 12px;
+    color: gray;
+}
