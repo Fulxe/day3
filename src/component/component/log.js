@@ -5,7 +5,7 @@ function Login() {
     <div className="main">
       <div class="box">
         <form autocomplete="off">
-          <h2>Sign in</h2>
+          <h2>Log in</h2>
           <div class="inputBox">
             <input type="text" required="required" />
             <span>Userame</span>
@@ -18,7 +18,7 @@ function Login() {
           </div>
           <div class="links">
             <a href="#">Forgot Password ?</a>
-            <a href="#">Signup</a>
+            <a href="#">Log up</a>
           </div>
           <input type="submit" value="Login" />
         </form>
