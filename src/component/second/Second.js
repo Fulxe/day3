@@ -3,9 +3,8 @@ import avatar from "./Avatar.jpg";
 import cover from "./Image.jpg";
 import React from "react";
 
-
 function Second(props) {
-  const {text , heading , image, name} = props
+  const { text, heading, image, name } = props;
   return (
     <div className="second">
       <img src={image} />
@@ -13,9 +12,7 @@ function Second(props) {
         <p>{heading}</p>
       </div>
       <div className="paragraph">
-        <p>
-          {text}
-        </p>
+        <p>{text}</p>
       </div>
       <div className="info">
         <img src={avatar} />
