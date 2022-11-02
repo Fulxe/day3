@@ -20,12 +20,12 @@ function App() {
         <div className="navbar">
           <Logo />
           <div className="navbar-right">
-            <div className="nv-text"><Link to="/products">Product</Link></div>
+            <div className="nv-text"><Link to="/Products">Product</Link></div>
             <div className="nv-text">Services</div>
             <div className="nv-text">Contact</div>
-            <div className="nv-text"><Link to="/login">Login</Link></div>
+            <div className="nv-text"><Link to="/Login">Login</Link></div>
             <div className="nv-tex">
-              <p>Get Access</p>
+              <p><Link to="/Get Access">Get Access</Link></p>
             </div>
           </div>
         </div>
