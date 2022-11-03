@@ -53,7 +53,7 @@ function Blog() {
           <Post
             image={Img3}
             text={
-              "How the iPhone popularized steampunk… and how the iPhone killed it off"
+              "How the iPhone popularized steampunk… and how the iPhone killed it off."
             }
             heading={"What Ever Happened to Steampunk?"}
             name={"Courtney Henry"}
