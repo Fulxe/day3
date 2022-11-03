@@ -1,5 +1,13 @@
 import "./blog.css";
 import Img1 from "./image/img1.jpg";
+import Img2 from "./image/img2.jpg"
+import Img3 from "./image/Image (3).jpg"
+import Img4 from "./image/Image (4).jpg"
+import Img5 from "./image/Image (5).jpg"
+import Img6 from "./image/Image (6).jpg"
+import Img7 from "./image/img7.jpg"
+import Img8 from "./image/img8.jpg"
+import Img9 from "./image/img9.jpg"
 import Post from "../second/Second";
 
 function Blog() {
@@ -27,69 +35,80 @@ function Blog() {
       <div className="posts">
         <div className="post2">
           <Post
-            src={Img1}
+            image={Img1}
             text={
               "There are times when our work impacts us deeply — sometimes in ways we neither acknowledge nor understand"
             }
             heading={"The Emotional Toll of Being in UX"}
+            name={"Wade Warren"}
           />
           <Post
+          image={Img2}
             text={
               "Our latest updates and blogs about managing your team Our latest updates and blogs about managing your team"
             }
             heading={"10 secret tips for managing a team remotely"}
+            name={"Bessie Cooper"}
           />
           <Post
+          image ={Img3}
             text={
               "How the iPhone popularized steampunk… and how the iPhone killed it off"
             }
             heading={"What Ever Happened to Steampunk?"}
+            name={"Courtney Henry"}
           />
         </div>
       </div>
       <div className="posts">
         <div className="post2">
           <Post
-            src={Img1}
+            image={Img4}
             text={
-              "There are times when our work impacts us deeply — sometimes in ways we neither acknowledge nor understand"
+              "How to use centuries of unfair advantage to make the world a more equal place"
             }
             heading={"The Emotional Toll of Being in UX"}
+            name={"Darlene Robert"}
           />
           <Post
+          image ={Img5}
             text={
-              "Our latest updates and blogs about managing your team Our latest updates and blogs about managing your team"
+              "It’s 2020, but women designers still face lower pay and less opportunity. What gives?"
             }
             heading={"10 secret tips for managing a team remotely"}
+            name={"Leslie Alexander"}
           />
           <Post
-            text={
-              "How the iPhone popularized steampunk… and how the iPhone killed it off"
-            }
+          image={Img6}
+            text={"Our latest updates and blogs about managing your team"}
             heading={"What Ever Happened to Steampunk?"}
+            name={"Eleanor Pena"}
           />
         </div>
       </div>
       <div className="posts">
         <div className="post2">
           <Post
-            src={Img1}
-            text={
-              "There are times when our work impacts us deeply — sometimes in ways we neither acknowledge nor understand"
-            }
+            image={Img7}
+            text={"Our latest updates and blogs about managing your team"}
             heading={"The Emotional Toll of Being in UX"}
+            name={"Jane Cooper"}
           />
           <Post
+          image={Img8}
             text={
-              "Our latest updates and blogs about managing your team Our latest updates and blogs about managing your team"
+              "Artists and designers are working to address a major problem for marginalized communities in the data economy: ‘If the data does not exist…"
             }
             heading={"10 secret tips for managing a team remotely"}
+            name={"Jenny Wilson"}
           />
           <Post
+          image={Img9}
             text={
-              "How the iPhone popularized steampunk… and how the iPhone killed it off"
+              "You might not know the music, but designers have certainly taken notice of this small but visceral movement from the late ’80s"
             }
             heading={"What Ever Happened to Steampunk?"}
+            name={"Jacob Jones"}
           />
         </div>
       </div>
