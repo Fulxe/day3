@@ -1,13 +1,13 @@
 import "./blog.css";
 import Img1 from "./image/img1.jpg";
-import Img2 from "./image/img2.jpg"
-import Img3 from "./image/Image (3).jpg"
-import Img4 from "./image/Image (4).jpg"
-import Img5 from "./image/Image (5).jpg"
-import Img6 from "./image/Image (6).jpg"
-import Img7 from "./image/img7.jpg"
-import Img8 from "./image/img8.jpg"
-import Img9 from "./image/img9.jpg"
+import Img2 from "./image/img2.jpg";
+import Img3 from "./image/Image (3).jpg";
+import Img4 from "./image/Image (4).jpg";
+import Img5 from "./image/Image (5).jpg";
+import Img6 from "./image/Image (6).jpg";
+import Img7 from "./image/img7.jpg";
+import Img8 from "./image/img8.jpg";
+import Img9 from "./image/img9.jpg";
 import Post from "../second/Second";
 
 function Blog() {
@@ -43,7 +43,7 @@ function Blog() {
             name={"Wade Warren"}
           />
           <Post
-          image={Img2}
+            image={Img2}
             text={
               "Our latest updates and blogs about managing your team Our latest updates and blogs about managing your team"
             }
@@ -51,7 +51,7 @@ function Blog() {
             name={"Bessie Cooper"}
           />
           <Post
-          image ={Img3}
+            image={Img3}
             text={
               "How the iPhone popularized steampunk… and how the iPhone killed it off"
             }
@@ -71,7 +71,7 @@ function Blog() {
             name={"Darlene Robert"}
           />
           <Post
-          image ={Img5}
+            image={Img5}
             text={
               "It’s 2020, but women designers still face lower pay and less opportunity. What gives?"
             }
@@ -79,7 +79,7 @@ function Blog() {
             name={"Leslie Alexander"}
           />
           <Post
-          image={Img6}
+            image={Img6}
             text={"Our latest updates and blogs about managing your team"}
             heading={"What Ever Happened to Steampunk?"}
             name={"Eleanor Pena"}
@@ -95,7 +95,7 @@ function Blog() {
             name={"Jane Cooper"}
           />
           <Post
-          image={Img8}
+            image={Img8}
             text={
               "Artists and designers are working to address a major problem for marginalized communities in the data economy: ‘If the data does not exist…"
             }
@@ -103,7 +103,7 @@ function Blog() {
             name={"Jenny Wilson"}
           />
           <Post
-          image={Img9}
+            image={Img9}
             text={
               "You might not know the music, but designers have certainly taken notice of this small but visceral movement from the late ’80s"
             }
