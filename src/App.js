@@ -31,7 +31,7 @@ function App() {
         </div>
         <div className="product">
           <div className="pro">
-            <div className="text">
+            <div className="grchg">
               <p>Instant collaborations for remote teams</p>
             </div>
             <div className="text2">

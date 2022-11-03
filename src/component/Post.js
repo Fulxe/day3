@@ -39,6 +39,7 @@ function Post() {
           <img src={Image} />
         </div>
       </div>
+
       <div className="mirage">
         <div className="dust">
           <Title

@@ -16,7 +16,7 @@
   .first {
     width: 370px;
     height: 375px;
-    box-shadow: 1px 1px 20px grey;
+    box-shadow: 1px 1px 5px grey;
     display: flex;
     flex-direction: column;
   }

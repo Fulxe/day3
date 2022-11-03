@@ -6,9 +6,9 @@ import React from "react";
 function Second(props) {
   const { text, heading, image, name } = props;
   return (
-    <div className="second">
+    <div className="second21">
       <img src={image} />
-      <div className="heading">
+      <div className="garchig">
         <p>{heading}</p>
       </div>
       <div className="paragraph">
