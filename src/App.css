@@ -124,6 +124,7 @@
   height: 100%;
   display: flex;
   justify-content: flex-end;
+  border-radius: 10%;
 }
 .discription {
   width: 50%;
@@ -391,5 +392,5 @@
   display: flex;
 }
 .grey {
-  background-color:#252b3b;
+  background-color: #252b3b;
 }

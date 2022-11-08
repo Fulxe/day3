@@ -19,7 +19,10 @@ function App() {
   const { ToggleSwitch, darkMode } = useContext(DarkMode);
   console.log(darkMode);
   return (
-    <div className={`Main ${darkMode && "grey"}`}>
+    <div
+      className={`Main ${darkMode && "grey"}`}
+      style={{ color: darkMode && "white" }}
+    >
       <div className="Header">
         <div className="navbar">
           <Logo />
@@ -61,7 +64,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className={`Meeting ${darkMode && "grey"}`}>
+      <div className="Meeting" style={{ color: darkMode && "white" }}>
         <div className="discription">
           <Task
             text={
@@ -74,7 +77,7 @@ function App() {
           <img src={Meeting} />
         </div>
       </div>
-      <div className="product1">
+      <div className={`product1 ${darkMode && "grey"}`}>
         <div className="bck-img">
           <img src={Event} />
           <img src={Hall} />
@@ -132,7 +135,7 @@ function App() {
           />
         </div>
       </div>
-      <div className="footer">
+      <div className="footer" style={{ backgroundColor: darkMode && "greyno" }}>
         <div className="footer1">
           <div className="left">
             <div className="footer-logo">

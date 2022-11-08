@@ -19,6 +19,7 @@
     box-shadow: 1px 1px 5px grey;
     display: flex;
     flex-direction: column;
+    border-radius: 50px;
   }
   .star {
     width: 120px;
