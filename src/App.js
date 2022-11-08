@@ -12,20 +12,34 @@ import pro2 from "./eleon.jpg";
 import avatar from "./Components/Avatar.jpg";
 import pro3 from "./amy2.jpg";
 import { Link } from "react-router-dom";
+import { DarkMode } from "./Theme/theme";
+import { useContext } from "react";
 
 function App() {
+  const { ToggleSwitch, darkMode } = useContext(DarkMode);
+  console.log(darkMode);
   return (
-    <div className="Main">
+    <div className={`Main ${darkMode && "grey"}`}>
       <div className="Header">
         <div className="navbar">
           <Logo />
           <div className="navbar-right">
-            <div className="nv-text"><Link to="/Products">Product</Link></div>
+            <label className="switch">
+              <input type="checkbox" onChange={ToggleSwitch}></input>
+              <span class="slider-round"></span>
+            </label>
+            <div className="nv-text">
+              <Link to="/Products">Product</Link>
+            </div>
             <div className="nv-text">Services</div>
             <div className="nv-text">Contact</div>
-            <div className="nv-text"><Link to="/Login">Login</Link></div>
+            <div className="nv-text">
+              <Link to="/Login">Login</Link>
+            </div>
             <div className="nv-tex">
-              <p><Link to="/Get Access">Get Access</Link></p>
+              <p>
+                <Link to="/Get Access">Get Access</Link>
+              </p>
             </div>
           </div>
         </div>
@@ -47,7 +61,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="Meeting">
+      <div className={`Meeting ${darkMode && "grey"}`}>
         <div className="discription">
           <Task
             text={
@@ -220,9 +234,10 @@ function Task(props) {
   );
 }
 function Logo() {
+  const { ToggleSwitch, darkMode } = useContext(DarkMode);
   return (
     <div className="navbar-left">
-      <p>team</p>
+      <p style={{ color: darkMode && "white" }}>Team</p>
       <div></div>
     </div>
   );
