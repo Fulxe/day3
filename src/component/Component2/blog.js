@@ -8,23 +8,11 @@ import Img6 from "./image/Image (6).jpg";
 import Img7 from "./image/img7.jpg";
 import Img8 from "./image/img8.jpg";
 import Img9 from "./image/img9.jpg";
-import Post from "../second/Second";
+import Post from "../../../day3/src/Components/component/Post"
 
 function Blog() {
   return (
     <div className="App">
-      <div className="navbar">
-        <Logo />
-        <div className="navbar-right">
-          <div className="nv-text">Product</div>
-          <div className="nv-text">Services</div>
-          <div className="nv-text">Contact</div>
-          <div className="nv-text">Log in</div>
-          <div className="nv-tex">
-            <p>Get Access</p>
-          </div>
-        </div>
-      </div>
       <div className="Head">
         <div className="head2">
           <h1>Blog posts</h1>
