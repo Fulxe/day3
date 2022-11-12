@@ -8,9 +8,36 @@ import Img6 from "./image/Image (6).jpg";
 import Img7 from "./image/img7.jpg";
 import Img8 from "./image/img8.jpg";
 import Img9 from "./image/img9.jpg";
-import Post from "../second/Second";
+import { Second } from "../second/Second";
+import React, { useState } from "react";
+import axios from "axios";
+import { useEffect } from "react";
 
 function Blog() {
+  const [data, setData] = useState([]);
+
+  const getData = async () => {
+    // const res = await axios.get('https://dummyapi.io/data/v1/post?limit=10', {
+    try {
+      // console.log('sent')
+      const res = await axios.get("https://dummyapi.io/data/v1/post?limit=10", {
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+          "app-id": "636a0100b23c1794f297d097",
+        },
+      });
+
+      setData(res.data.data);
+
+      console.log(res.data.data);
+    } catch (err) {
+      alert("dahiad yavul");
+    }
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <div className="App">
       <div className="navbar">
@@ -33,84 +60,15 @@ function Blog() {
       </div>
       <div className="margin"></div>
       <div className="posts">
-        <div className="post2">
-          <Post
-            image={Img1}
-            text={
-              "There are times when our work impacts us deeply — sometimes in ways we neither acknowledge nor understand"
-            }
-            heading={"The Emotional Toll of Being in UX"}
-            name={"Wade Warren"}
+        {data.map((post) => (
+          <Second
+            image={post.image}
+            text={post.text}
+            heading={post.tags}
+            name={post.owner.firstName}
+            avatar={post.owner.picture}
           />
-          <Post
-            image={Img2}
-            text={
-              "Our latest updates and blogs about managing your team Our latest updates and blogs about managing your team"
-            }
-            heading={"10 secret tips for managing a team remotely"}
-            name={"Bessie Cooper"}
-          />
-          <Post
-            image={Img3}
-            text={
-              "How the iPhone popularized steampunk… and how the iPhone killed it off."
-            }
-            heading={"What Ever Happened to Steampunk?"}
-            name={"Courtney Henry"}
-          />
-        </div>
-      </div>
-      <div className="posts">
-        <div className="post2">
-          <Post
-            image={Img4}
-            text={
-              "How to use centuries of unfair advantage to make the world a more equal place"
-            }
-            heading={"The Emotional Toll of Being in UX"}
-            name={"Darlene Robert"}
-          />
-          <Post
-            image={Img5}
-            text={
-              "It’s 2020, but women designers still face lower pay and less opportunity. What gives?"
-            }
-            heading={"10 secret tips for managing a team remotely"}
-            name={"Leslie Alexander"}
-          />
-          <Post
-            image={Img6}
-            text={"Our latest updates and blogs about managing your team"}
-            heading={"What Ever Happened to Steampunk?"}
-            name={"Eleanor Pena"}
-          />
-        </div>
-      </div>
-      <div className="posts">
-        <div className="post2">
-          <Post
-            image={Img7}
-            text={"Our latest updates and blogs about managing your team"}
-            heading={"The Emotional Toll of Being in UX"}
-            name={"Jane Cooper"}
-          />
-          <Post
-            image={Img8}
-            text={
-              "Artists and designers are working to address a major problem for marginalized communities in the data economy: ‘If the data does not exist…"
-            }
-            heading={"10 secret tips for managing a team remotely"}
-            name={"Jenny Wilson"}
-          />
-          <Post
-            image={Img9}
-            text={
-              "You might not know the music, but designers have certainly taken notice of this small but visceral movement from the late ’80s"
-            }
-            heading={"What Ever Happened to Steampunk?"}
-            name={"Jacob Jones"}
-          />
-        </div>
+        ))}
       </div>
       <div className="nxt-page">
         <div className="cntr">

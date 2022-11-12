@@ -3,11 +3,11 @@ import avatar from "./Avatar.jpg";
 import cover from "./Image.jpg";
 import React from "react";
 
-function Second(props) {
-  const { text, heading, image, name } = props;
+export function Second(props) {
+  const { text, heading, image, name , avatar} = props;
   return (
     <div className="second21">
-      <img src={image} />
+      <img className="zurag" src={image} />
       <div className="garchig">
         <p>{heading}</p>
       </div>
@@ -15,13 +15,13 @@ function Second(props) {
         <p>{text}</p>
       </div>
       <div className="info">
-        <img src={avatar} />
+        <img className="picture" src={avatar} />
         <p>{name}</p>
-        <div></div>
+        <div className="border"></div>
         <p>2nd January,2022</p>
       </div>
     </div>
   );
 }
 
-export default Second;
+// export default Second;

@@ -6,10 +6,10 @@ import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Event from "./e2.jpg";
 import Event1 from "./Group 18.jpg";
-import About from "./Components/First";
+import About from "./First/First";
 import pro from "./jane.jpg";
 import pro2 from "./eleon.jpg";
-import avatar from "./Components/Avatar.jpg";
+import avatar from "./First/Avatar.jpg";
 import pro3 from "./amy2.jpg";
 import { Link } from "react-router-dom";
 import { DarkMode } from "./Theme/theme";
@@ -41,7 +41,7 @@ function App() {
             </div>
             <div className="nv-tex">
               <p>
-                <Link to="/Get Access">Get Access</Link>
+                <Link to="/Get-Access">Get Access</Link>
               </p>
             </div>
           </div>
