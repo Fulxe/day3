@@ -40,18 +40,6 @@ function Blog() {
 
   return (
     <div className="App">
-      <div className="navbar">
-        <Logo />
-        <div className="navbar-right">
-          <div className="nv-text">Product</div>
-          <div className="nv-text">Services</div>
-          <div className="nv-text">Contact</div>
-          <div className="nv-text">Log in</div>
-          <div className="nv-tex">
-            <p>Get Access</p>
-          </div>
-        </div>
-      </div>
       <div className="Head">
         <div className="head2">
           <h1>Blog posts</h1>
