@@ -2,12 +2,14 @@ import "./Second.css";
 import avatar from "./Avatar.jpg";
 import cover from "./Image.jpg";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export function Second(props) {
-  const { text, heading, image, name , avatar} = props;
+  let navigate = useNavigate();
+  const { text, heading, image, name , avatar , id} = props;
   return (
     <div className="second21">
-      <img className="zurag" src={image} />
+      <img className="zurag" src={image} onClick={()=>navigate(`blog/${id}`)  } />
       <div className="garchig">
         <p>{heading}</p>
       </div>

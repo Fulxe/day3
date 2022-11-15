@@ -12,6 +12,8 @@ import { Second } from "../second/Second";
 import React, { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
+import Navbar from "../Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
 
 function Blog() {
   const [data, setData] = useState([]);
@@ -40,6 +42,7 @@ function Blog() {
 
   return (
     <div className="App">
+      <Navbar />
       <div className="Head">
         <div className="head2">
           <h1>Blog posts</h1>
@@ -50,6 +53,7 @@ function Blog() {
       <div className="posts">
         {data.map((post) => (
           <Second
+            id={post.id}
             image={post.image}
             text={post.text}
             heading={post.tags}

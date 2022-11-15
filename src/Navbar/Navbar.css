@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Header {
+  width: 100%;
+  height: 100vh;
+}
+.navbar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-left {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-left p {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 40px;
+  color: white;
+  cursor: pointer;
+}
+.navbar-left div {
+  width: 10px;
+  height: 10px;
+  background-color: #0bbef2;
+  margin-top: 9px;
+}
+.navbar-right {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nv-text {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  cursor: pointer;
+}
+.nv-tex {
+  color: grey;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.nv-tex p {
+  margin: 16px 22px;
+}
