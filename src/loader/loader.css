@@ -1,6 +1,5 @@
 body {
-  display: flex;
-  justify-content: center;
+  min-height: 100vh;
 }
 .loader {
   position: relative;
@@ -14,7 +13,7 @@ body {
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg, #fb0094,#0000ff, #00ff00, #ffff00,#fb0094,#0000ff, #00ff00, #ffff00, #fb0094);
-    animation: animate 20s linear infinite;
+    animation: loader 20s linear infinite;
     background-size: 500%;
 }
 .loader::after {
@@ -22,11 +21,11 @@ body {
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg, #fb0094,#0000ff, #00ff00, #ffff00,#fb0094,#0000ff, #00ff00, #ffff00, #fb0094);
-    animation: animate 20s linear infinite;
+    animation: loader 20s linear infinite;
     background-size: 500%;
     filter: blur(20px);
 }
-@keyframes animate {
+@keyframes loader {
     0% {
         background-position: 0 0 ;
     }

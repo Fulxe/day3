@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./id.css";
 import { useParams } from "react-router-dom";
-import Loader from "../loader/loader"
+import Loader from "../loader/loader";
 
 export function Info(props) {
   const { id } = useParams();
@@ -38,54 +38,60 @@ export function Info(props) {
     FetchData();
   }, []);
   return (
-    <div className="big">
-      {data ? (
-        <div>
-          <div className="major">
-            <img className="major-img" src={data.image} />
-            <div className="major-tags">{`dog type: ${data.tags}`}</div>
-            <div className="major-text">{`about dog : ${data.text}`}</div>
-            <div className="like">{`like count : ${data.likes}`}</div>{" "}
-            <h1 className="owner-name">{`owner: ${data.owner?.firstName} ${data.owner?.lastName}`}</h1>
-          </div>
-          <div className="major-search">
-            <div className="major-value">
-              <div className="val-parent">
-                <input
-                  className="val"
-                  onKeyDown={(e) => e.key === "Enter" && newElement()}
-                  onChange={(e) => setInput(e.target.value)}
-                  placeholder="what do you think about this, please tell us your opinion?"
-                />
-                <button className="val-button" onClick={() => newElement()}>
-                  post
-                </button>
+    <div className="fullbody">
+      <div className="big">
+        {data ? (
+          <div>
+            <div className="major">
+              <div className="major-tags">
+                <h1>{`dog type: ${data.tags}`}</h1>
               </div>
-              <div className="comment">
-                {change.map((e) =>
-                  search.length ? (
-                    e.startsWith(search) && (
-                      <div className="comment1">
-                        <input value={e} />
+              <img className="major-img" src={data.image} />
+              <div className="major-text">
+                <marquee direction="right">{`about dog : ${data.text}`}</marquee>
+              </div>
+              <div className="like">{`like count : ${data.likes}`}</div>{" "}
+              <h1 className="owner-name">{`owner: ${data.owner?.firstName} ${data.owner?.lastName}`}</h1>
+            </div>
+            <div className="major-search">
+              <div className="major-value">
+                <div className="val-parent">
+                  <input
+                    className="val"
+                    onKeyDown={(e) => e.key === "Enter" && newElement()}
+                    onChange={(e) => setInput(e.target.value)}
+                    placeholder="what do you think about this, please tell us your opinion?"
+                  />
+                  <button className="val-button" onClick={() => newElement()}>
+                    post
+                  </button>
+                </div>
+                <div className="comment">
+                  {change.map((e) =>
+                    search.length ? (
+                      e.startsWith(search) && (
+                        <div className="comment1">
+                          <input value={e} />
 
-                        <Button delete={e} value="delete" />
+                          <Button delete={e} value="delete" />
+                        </div>
+                      )
+                    ) : (
+                      <div className="comment1">
+                        <input className="additional" value={e} />
+
+                        <Button className="rem" delete={e} value="remove" />
                       </div>
                     )
-                  ) : (
-                    <div className="comment1">
-                      <input className="additional" value={e} />
-
-                      <Button className="rem" delete={e} value="remove" />
-                    </div>
-                  )
-                )}
+                  )}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      ) : (
-        <Loader/>
-      )}
+        ) : (
+          <Loader />
+        )}
+      </div>
     </div>
   );
 }

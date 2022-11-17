@@ -1,10 +1,12 @@
 import "./post.css";
 import Avatar from "./Avatar.jpg";
 import Image from "./Image (1).jpg";
+import Navbar from "../Navbar/Navbar";
 
 function Post() {
   return (
     <div className="App">
+      <Navbar />
       <div className="navbar">
         <Logo />
         <div className="navbar-right">
