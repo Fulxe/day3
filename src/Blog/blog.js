@@ -11,12 +11,14 @@ import Img9 from "./image/img9.jpg";
 import { Second } from "../second/Second";
 import React, { useState } from "react";
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import Navbar from "../Navbar/Navbar";
 import { useNavigate } from "react-router-dom";
 import Footer from "../Footer/footer";
+import { DarkMode } from "../Theme/theme";
 
 function Blog() {
+  const { ToggleSwitch, darkMode } = useContext(DarkMode);
   const [data, setData] = useState([]);
 
   const getData = async () => {
@@ -42,7 +44,7 @@ function Blog() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundcolor: darkMode && "gray" }}>
       <div className="Head">
         <div className="head2">
           <h1>Blog posts</h1>
@@ -72,7 +74,7 @@ function Blog() {
           </button>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

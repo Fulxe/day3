@@ -2,7 +2,7 @@ import { React, axios, useContext } from "react";
 import Meeting from "./meeting.jpg";
 import Hall from "./e3.jpg";
 import "./App.css";
-import { Button, Navbar } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Event from "./e2.jpg";
 import Event1 from "./Group 18.jpg";
@@ -94,34 +94,34 @@ function App() {
       <div className="about-us">
         <div className="h1">What people say about us</div>
         <div className="says">
-            <About
-              text={
-                "Give everyone you work with—inside and outside your emoji, keep conversations focused in channels, and simplify all your communication into one place."
-              }
-              name={"Amy Klassen"}
-              profile={avatar}
-            />
-            <About
-              text={
-                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-              }
-              name={"Jane Cooper"}
-              profile={pro}
-            />
-            <About
-              text={
-                "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. "
-              }
-              name={"Eleanor Pena"}
-              profile={pro2}
-            />
-            <About
-              text={
-                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-              }
-              name={"Amy Klassen"}
-              profile={pro3}
-            />
+          <About
+            text={
+              "Give everyone you work with—inside and outside your emoji, keep conversations focused in channels, and simplify all your communication into one place."
+            }
+            name={"Amy Klassen"}
+            profile={avatar}
+          />
+          <About
+            text={
+              "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+            }
+            name={"Jane Cooper"}
+            profile={pro}
+          />
+          <About
+            text={
+              "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. "
+            }
+            name={"Eleanor Pena"}
+            profile={pro2}
+          />
+          <About
+            text={
+              "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+            }
+            name={"Amy Klassen"}
+            profile={pro3}
+          />
         </div>
       </div>
       <Footer />

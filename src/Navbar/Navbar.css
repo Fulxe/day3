@@ -50,7 +50,7 @@
   color: rgba(77, 160, 253, 1);
 }
 .navbar-right {
-  width: 35%;
+  width: 50%;
   height: 100%;
   display: flex;
   justify-content: space-around;
