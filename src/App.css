@@ -156,7 +156,7 @@
   width: 100%;
   height: 100vh;
   transform-origin: bottom right;
-  background: linear-gradient(0deg, transparent, #ff0000, #ff0000);
+  background: linear-gradient(0deg, transparent, purple , purple);
   animation: animate 6s linear infinite;
 }
 .animation::after {
@@ -167,7 +167,7 @@
   width: 100%;
   height: 150vh;
   transform-origin:bottom left;
-  background: linear-gradient(0deg, transparent,#ff0000, #ff0000);
+  background: linear-gradient(0deg, transparent, lightblue, lightblue);
   animation: animate 6s linear infinite;
   animation-delay: -3s;
 }
@@ -214,6 +214,7 @@
   align-items: center;
 }
 .pro2 img {
+  border-radius: 50px;
   margin-left: 70px;
 }
 .about-us {

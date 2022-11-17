@@ -47,8 +47,8 @@
   border-top-right-radius: 10px;
   border-bottom-left-radius:10px ;
   transition: 700ms;
-  background-color: rgb(131, 73, 239);
-  color: rgba(77, 160, 253, 1);
+  background-color:rgba(77, 160, 253, 1);
+  color:darkblue;
 }
 .navbar-right {
   width: 50%;
