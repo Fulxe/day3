@@ -7,12 +7,13 @@
   height: 10%;
   display: flex;
   justify-content: space-around;
+  box-shadow: 0 0 20px white;
 }
 .navbar-left {
-  width: 10%;
+  width: 20%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .navbar-left p {
@@ -21,6 +22,32 @@
   line-height: 40px;
   color: black;
   cursor: pointer;
+  position: relative;
+  animation: deg 2s ease-in-out 100ms infinite alternate;
+}
+@keyframes deg {
+  0% {
+    transform: rotate(0deg);
+    color: black;
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    left: 200px;
+    color: gray;
+  }
+}
+.nv-text:hover {
+  transform: translateY(-5px);
+  font-size: 23px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  transition: 500ms;
+  color: rgba(77, 160, 253, 1);
 }
 .navbar-right {
   width: 35%;
@@ -28,6 +55,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transition: font-size 2s;
 }
 .nv-text {
   font-weight: 700;

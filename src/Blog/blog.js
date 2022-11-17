@@ -43,7 +43,6 @@ function Blog() {
 
   return (
     <div className="App">
-      <Navbar />
       <div className="Head">
         <div className="head2">
           <h1>Blog posts</h1>

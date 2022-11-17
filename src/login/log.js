@@ -1,10 +1,8 @@
 import "./log.css";
-import Navbar from "../Navbar/Navbar";
 
 function Login() {
   return (
     <div>
-      <Navbar />
       <div className="main">
         <div class="box">
           <form autocomplete="off">

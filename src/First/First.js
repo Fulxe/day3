@@ -23,7 +23,7 @@ function First(props) {
       </div>
       <div className="profile">
         <img src={profile} />
-        <p style={{color: darkMode && "grey" }}>{name}</p>
+        <marquee style={{color: darkMode && "grey" }}>{name}</marquee>
       </div>
     </div>
   );

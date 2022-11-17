@@ -17,33 +17,12 @@ import Footer from "./Footer/footer";
 
 function App() {
   const { ToggleSwitch, darkMode } = useContext(DarkMode);
-  // console.log(darkMode);
   return (
     <div
       className={`Main ${darkMode && "grey"}`}
       style={{ color: darkMode && "white" }}
     >
       <div className="Header">
-        <div className="navbar">
-          <Logo />
-          <div className="navbar-right">
-            <label className="switch">
-              <input type="checkbox" onChange={ToggleSwitch}></input>
-              <span class="slider-round"></span>
-            </label>
-            <div className="nv-text">
-              <Link to="/Products">Product</Link>
-            </div>
-            <div className="nv-text">Services</div>
-            <div className="nv-text">Contact</div>
-            <div className="nv-text"><Link to="/Login">Login</Link></div>
-            <div className="nv-tex">
-              <p>
-                <Link to="/Get-Access">Get Access</Link>
-              </p>
-            </div>
-          </div>
-        </div>
         <div className="product">
           <div className="pro">
             <div className="grchg">
@@ -63,74 +42,86 @@ function App() {
         </div>
       </div>
       <div className="Meeting" style={{ color: darkMode && "white" }}>
-        <div className="discription">
-          <Task
-            text={
-              "Give everyone you work with—inside and outside your company—a more productive way to stay in sync. Respond faster with emoji, keep conversations focused in channels, and simplify all your communication into one place."
-            }
-            header={"Your Hub for teamwork"}
-          />
-        </div>
-        <div className="meeting">
-          <img src={Meeting} />
+        <div className="animation">
+          <div className={`huree ${darkMode && "grey"}`}>
+            <div className="discription">
+              <Task
+                text={
+                  "Give everyone you work with—inside and outside your company—a more productive way to stay in sync. Respond faster with emoji, keep conversations focused in channels, and simplify all your communication into one place."
+                }
+                header={"Your Hub for teamwork"}
+              />
+            </div>
+            <div className="meeting">
+              <img src={Meeting} />
+            </div>
+          </div>
         </div>
       </div>
       <div className={`product1 ${darkMode && "grey"}`}>
-        <div className="bck-img">
-          <img src={Event} />
-          <img src={Hall} />
+        <div className="animation">
+          <div className={`huree ${darkMode && "grey"}`}>
+            <div className="bck-img">
+              <img src={Event} />
+              <img src={Hall} />
+            </div>
+            <Task
+              text={
+                "Give everyone you work with—inside and outside your company—a more productive way to stay in sync. Respond faster with emoji, keep conversations focused in channels, and simplify all your communication into one place."
+              }
+              header={"Simple task management"}
+            />
+          </div>
         </div>
-        <Task
-          text={
-            "Give everyone you work with—inside and outside your company—a more productive way to stay in sync. Respond faster with emoji, keep conversations focused in channels, and simplify all your communication into one place."
-          }
-          header={"Simple task management"}
-        />
       </div>
       <div className="product2">
-        <div className="discription">
-          <Task
-            text={
-              "Give everyone you work with—inside and outside your company—a more productive way to stay in sync. Respond faster with emoji, keep conversations focused in channels, and simplify all your communication into one place."
-            }
-            header={"Scheduling that actually works"}
-          />
-        </div>
-        <div className="pro2">
-          <img src={Event1} />
+        <div className="animation">
+          <div className={`huree ${darkMode && "grey"}`}>
+            <div className="discription">
+              <Task
+                text={
+                  "Give everyone you work with—inside and outside your company—a more productive way to stay in sync. Respond faster with emoji, keep conversations focused in channels, and simplify all your communication into one place."
+                }
+                header={"Scheduling that actually works"}
+              />
+            </div>
+            <div className="pro2">
+              <img src={Event1} />
+            </div>
+          </div>
         </div>
       </div>
       <div className="about-us">
         <div className="h1">What people say about us</div>
         <div className="says">
-          <About
-            text={
-              "Give everyone you work with—inside and outside your emoji, keep conversations focused in channels, and simplify all your communication into one place."
-            }
-            name={"Amy Klassen"}
-            profile={avatar}
-          />
-          <About
-            text={
-              "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-            }
-            name={"Jane Cooper"}
-            profile={pro}
-          />
-          <About
-            text={
-              "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. "
-            }
-            name={"Eleanor Pena"}
-            profile={pro2}
-          />
-          <About
-            text={
-              "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-            }
-            name={"Amy Klassen"}
-            profile={pro3}
-          />
+            <About
+              text={
+                "Give everyone you work with—inside and outside your emoji, keep conversations focused in channels, and simplify all your communication into one place."
+              }
+              name={"Amy Klassen"}
+              profile={avatar}
+            />
+            <About
+              text={
+                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+              }
+              name={"Jane Cooper"}
+              profile={pro}
+            />
+            <About
+              text={
+                "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. "
+              }
+              name={"Eleanor Pena"}
+              profile={pro2}
+            />
+            <About
+              text={
+                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+              }
+              name={"Amy Klassen"}
+              profile={pro3}
+            />
         </div>
       </div>
       <Footer />

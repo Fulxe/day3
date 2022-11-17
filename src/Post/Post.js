@@ -8,7 +8,6 @@ import Footer from "../Footer/footer";
 function Post() {
   return (
     <div className="App">
-      <Navbar />
       <div className="second">
         <div className="Heading">
           <h1>10 Secrets for managing a remote team </h1>

@@ -7,7 +7,8 @@ import Login from "./login/log";
 import Blog from "./Blog/blog";
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 import { Theme } from "./Theme/theme";
-import {Info} from "./router/id";
+import { Info } from "./router/id";
+import Navbar from "./Navbar/Navbar";
 // import Footer from "./Footer/footer"
 // import Loader from "./loader/loader"
 
@@ -17,11 +18,13 @@ root.render(
     <Theme>
       <BrowserRouter>
         <Routes>
-          <Route path="" element={<App />} />
-          <Route path="Products" element={<Post />} />
-          <Route path="Login" element={<Login />} />
-          <Route path="Get-Access" element={<Blog />} />
-          <Route path="/Get-Access/blog/:id" element={<Info />} />
+          <Route path="/" element={<Navbar />}>
+            <Route path="" element={<App />} />
+            <Route path="Products" element={<Post />} />
+            <Route path="Login" element={<Login />} />
+            <Route path="Get-Access" element={<Blog />} />
+            <Route path="/Get-Access/blog/:id" element={<Info />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </Theme>
