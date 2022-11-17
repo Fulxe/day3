@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./id.css";
 import { useParams } from "react-router-dom";
+import Loader from "../loader/loader"
 
 export function Info(props) {
   const { id } = useParams();
@@ -83,7 +84,7 @@ export function Info(props) {
           </div>
         </div>
       ) : (
-        "loading"
+        <Loader/>
       )}
     </div>
   );
