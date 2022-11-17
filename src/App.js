@@ -11,6 +11,7 @@ import pro from "./jane.jpg";
 import pro2 from "./eleon.jpg";
 import avatar from "./First/Avatar.jpg";
 import pro3 from "./amy2.jpg";
+import axios from "react";
 import { Link } from "react-router-dom";
 import { DarkMode } from "./Theme/theme";
 import { useContext } from "react";
@@ -36,7 +37,11 @@ function App() {
             </div>
             <div className="nv-text">Services</div>
             <div className="nv-text">Contact</div>
+<<<<<<< HEAD
             <div className="nv-text"><Link to="/Login">Login</Link></div>
+=======
+            <div className="nv-text"><Link to="/Login">Log in</Link></div>
+>>>>>>> 39cc984 (check)
             <div className="nv-tex">
               <p>
                 <Link to="/Get-Access">Get Access</Link>
