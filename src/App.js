@@ -37,11 +37,7 @@ function App() {
             </div>
             <div className="nv-text">Services</div>
             <div className="nv-text">Contact</div>
-<<<<<<< HEAD
             <div className="nv-text"><Link to="/Login">Login</Link></div>
-=======
-            <div className="nv-text"><Link to="/Login">Log in</Link></div>
->>>>>>> 39cc984 (check)
             <div className="nv-tex">
               <p>
                 <Link to="/Get-Access">Get Access</Link>
