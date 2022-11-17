@@ -8,6 +8,7 @@ import Blog from "./Blog/blog";
 import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 import { Theme } from "./Theme/theme";
 import {Info} from "./router/id";
+// import Footer from "./Footer/footer"
 // import Loader from "./loader/loader"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

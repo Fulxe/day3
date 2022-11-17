@@ -1,28 +1,32 @@
 import "./log.css";
+import Navbar from "../Navbar/Navbar";
 
 function Login() {
   return (
-    <div className="main">
-      <div class="box">
-        <form autocomplete="off">
-          <h2>Log in</h2>
-          <div class="inputBox">
-            <input type="text" required="required" />
-            <span>Userame</span>
-            <i></i>
-          </div>
-          <div class="inputBox">
-            <input type="password" required="required" />
-            <span>Password</span>
-            <i></i>
-          </div>
-          <div class="links">
-            <a href="#">Forgot Password ?</a>
-            <a href="#">Log up</a>
-          </div>
-          <input type="submit" value="Login" />
-        </form>
-      </div>
+    <div>
+      <Navbar />
+      <div className="main">
+        <div class="box">
+          <form autocomplete="off">
+            <h2>Log in</h2>
+            <div class="inputBox">
+              <input type="text" required="required" />
+              <span>Userame</span>
+              <i></i>
+            </div>
+            <div class="inputBox">
+              <input type="password" required="required" />
+              <span>Password</span>
+              <i></i>
+            </div>
+            <div class="links">
+              <a href="#">Forgot Password ?</a>
+              <a href="#">Log up</a>
+            </div>
+            <input type="submit" value="Login" />
+          </form>
+        </div>
+      </div>{" "}
     </div>
   );
 }
