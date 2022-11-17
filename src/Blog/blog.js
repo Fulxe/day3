@@ -1,13 +1,4 @@
 import "./blog.css";
-import Img1 from "./image/img1.jpg";
-import Img2 from "./image/img2.jpg";
-import Img3 from "./image/Image (3).jpg";
-import Img4 from "./image/Image (4).jpg";
-import Img5 from "./image/Image (5).jpg";
-import Img6 from "./image/Image (6).jpg";
-import Img7 from "./image/img7.jpg";
-import Img8 from "./image/img8.jpg";
-import Img9 from "./image/img9.jpg";
 import { Second } from "../second/Second";
 import React, { useState } from "react";
 import axios from "axios";
