@@ -24,7 +24,7 @@ function Login() {
             <input type="submit" value="Login" />
           </form>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 }

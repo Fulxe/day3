@@ -35,11 +35,11 @@ function Blog() {
   }, []);
 
   return (
-    <div className="App" style={{ backgroundcolor: darkMode && "gray" }}>
+    <div className={`App ${darkMode && "grey"}`}>
       <div className="Head">
         <div className="head2">
-          <h1>Blog posts</h1>
-          <p>Our latest updates and blogs about managing your team</p>
+          <h1 style={{color : darkMode && "white"}}>Blog posts</h1>
+          <p style={{color : darkMode && "white"}}>Our latest updates and blogs about managing your team</p>
         </div>
       </div>
       <div className="margin"></div>

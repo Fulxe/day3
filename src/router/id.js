@@ -48,7 +48,7 @@ export function Info(props) {
               </div>
               <img className="major-img" src={data.image} />
               <div className="major-text">
-                <marquee direction="right">{`about dog : ${data.text}`}</marquee>
+                <marquee direction="left">{`about : ${data.text}`}</marquee>
               </div>
               <div className="like">{`like count : ${data.likes}`}</div>{" "}
               <h1 className="owner-name">{`owner: ${data.owner?.firstName} ${data.owner?.lastName}`}</h1>
