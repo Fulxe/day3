@@ -144,14 +144,5 @@ function Task(props) {
     </div>
   );
 }
-function Logo() {
-  const { ToggleSwitch, darkMode } = useContext(DarkMode);
-  return (
-    <div className="navbar-left">
-      <p style={{ color: darkMode && "white" }}>Team</p>
-      <div></div>
-    </div>
-  );
-}
 
 export default App;

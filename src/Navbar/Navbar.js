@@ -35,10 +35,12 @@ function Navbar() {
 }
 function Logo() {
   return (
-    <div className="navbar-left">
-      <p>Team</p>
-      <div></div>
-    </div>
+    <Link to="/main">
+      <div className="navbar-left">
+        <p>Team</p>
+        <div></div>
+      </div>
+    </Link>
   );
 }
 export default Navbar;

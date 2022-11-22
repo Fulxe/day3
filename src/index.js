@@ -20,6 +20,7 @@ root.render(
         <Routes>
           <Route path="/" element={<Navbar />}>
             <Route path="" element={<App />} />
+            <Route path="/main" element={<App />} />
             <Route path="Products" element={<Post />} />
             <Route path="Login" element={<Login />} />
             <Route path="Get-Access" element={<Blog />} />

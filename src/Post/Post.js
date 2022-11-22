@@ -5,8 +5,7 @@ import Image from "./Image (1).jpg";
 import Navbar from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/footer";
-import {DarkMode} from "../Theme/theme"
-
+import { DarkMode } from "../Theme/theme";
 
 function Post() {
   const { ToggleSwitch, darkMode } = useContext(DarkMode);
@@ -14,7 +13,9 @@ function Post() {
     <div className={`App ${darkMode && "grey"}`}>
       <div className="second">
         <div className="Heading">
-          <h1 style={{color : darkMode && "white"}}>10 Secrets for managing a remote team </h1>
+          <h1 style={{ color: darkMode && "white" }}>
+            10 Secrets for managing a remote team{" "}
+          </h1>
         </div>
         <div className="creater">
           <div className="sec">
@@ -22,11 +23,11 @@ function Post() {
               <img src={Avatar} />
             </div>
             <div className="p">
-              <p style={{color : darkMode && "white"}}>Shedrack eze</p>
+              <p style={{ color: darkMode && "white" }}>Shedrack eze</p>
             </div>
             <div className="border"></div>
             <div className="date">
-              <p style={{color : darkMode && "white"}}>2nd January,2022</p>
+              <p style={{ color: darkMode && "white" }}>2nd January,2022</p>
             </div>
           </div>
         </div>
@@ -70,13 +71,13 @@ function Post() {
             <img src={Avatar} />
             <div className="end3-1">
               <div className="write">
-                <p style={{color : darkMode && "white"}}>Written By</p>
+                <p style={{ color: darkMode && "white" }}>Written By</p>
               </div>
               <div className="Name">
-                <p style={{color : darkMode && "white"}}>Shedrack Eze</p>
+                <p style={{ color: darkMode && "white" }}>Shedrack Eze</p>
               </div>
               <div className="Team">
-                <p style={{color : darkMode && "white"}}>CEO Team App</p>
+                <p style={{ color: darkMode && "white" }}>CEO Team App</p>
               </div>
             </div>
           </div>
@@ -98,22 +99,18 @@ function Post() {
           </div>
         </div>
       </div>
-          <Footer/>
+      <Footer />
     </div>
   );
 }
-
-function Logo() {
-  return (
-    <div className="navbar-left">
-      <p>team</p>
-    </div>
-  );
-}
-export default Post;
-
 function Title(props) {
   const { ToggleSwitch, darkMode } = useContext(DarkMode);
   const { text } = props;
-  return <div className="titel"  style={{color : darkMode && "white"}} >{text}</div>;
+  return (
+    <div className="titel" style={{ color: darkMode && "white" }}>
+      {text}
+    </div>
+  );
 }
+
+export default Post;
