@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext} from "react";
 import axios from "axios";
 import "./id.css";
 import { useParams } from "react-router-dom";
 import Loader from "../loader/loader";
+import { DarkMode } from "../Theme/theme";
 
 export function Info(props) {
+  const { ToggleSwitch, darkMode } = useContext(DarkMode);
   const { id } = useParams();
   const [data, setData] = useState();
   const [input, setInput] = useState("");
@@ -38,7 +40,7 @@ export function Info(props) {
     FetchData();
   }, []);
   return (
-    <div className="fullbody">
+    <div className={`fullbody ${darkMode && "grey"}`}>
       <div className="big">
         {data ? (
           <div>
