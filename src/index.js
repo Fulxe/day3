@@ -9,13 +9,14 @@ import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
 import { Theme } from "./Theme/theme";
 import { Info } from "./router/id";
 import Navbar from "./Navbar/Navbar";
+import Serv from "./services/serv";
 // import Footer from "./Footer/footer"
 // import Loader from "./loader/loader"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Theme>
+    {/* <Theme>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navbar />}>
@@ -28,6 +29,7 @@ root.render(
           </Route>
         </Routes>
       </BrowserRouter>
-    </Theme>
+    </Theme> */}
+    <Serv/>
   </React.StrictMode>
 );

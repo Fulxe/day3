@@ -1,0 +1,19 @@
+.nuur {
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+}
+.tolgoi {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  gap: 10px;
+}
+.tolgoi:nth-child(1) {
+    color: white;
+}
+.tolgoi:nth-child(2) {
+    color: lightseagreen;
+}
