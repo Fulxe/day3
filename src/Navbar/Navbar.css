@@ -7,7 +7,7 @@
   height: 10%;
   display: flex;
   justify-content: space-around;
-  box-shadow: 0 0 20px white;
+  box-shadow: 0 0 5px white;
 }
 .navbar-left {
   width: 20%;
