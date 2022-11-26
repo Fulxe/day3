@@ -17,7 +17,7 @@ function Navbar() {
           <div className="nv-text">
             <Link to="/Products">Product</Link>
           </div>
-          <div className="nv-text">Services</div>
+          <div className="nv-text"> <Link to="/Service">Services</Link></div>
           <div className="nv-text">Contact</div>
           <div className="nv-text">
             <Link to="/Login">Login</Link>
